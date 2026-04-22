@@ -1,7 +1,12 @@
 import java.lang.*;
 import java.util.*;
-class varArgSUM{
+class VarArgSUM{
       
+    static void show(int ...A){
+        for (int x: A)
+            System.out.println(x);
+    }
+
     static int sum(int ...A)
     {
         int s=0;
@@ -27,5 +32,6 @@ class varArgSUM{
     public static void main(String[] args){
         System.out.println(sum(2,22,33,44,55));
         System.out.println(sum(100.0,200,100)); // 500*0.10 =75.0 
+        show(10,20,30); // no sop as already written
     }
 }

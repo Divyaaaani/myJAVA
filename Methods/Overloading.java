@@ -1,6 +1,12 @@
 // overloaded method to reverse a int or array
+// overloaded method to validate a name
+
 import java.util.*;
 class Overloading{
+    static boolean validate(String name){
+        return name.matches("a-zA-Z\\s+");
+    }
+
     static int reverse(int n){
         int rev=0;
         while(n>0){
@@ -32,5 +38,13 @@ class Overloading{
 
     int num=987654321;
     int revnum=reverse(num);
-    System.out.println("\nReversed number: "+revnum);}
+    System.out.println("\nReversed number: "+revnum);
+
+    String name="Divyani";
+    boolean isValid=validate(name);
+    System.out.println("Is valid name: "+isValid);
+
+    
+    }
+    
 }
