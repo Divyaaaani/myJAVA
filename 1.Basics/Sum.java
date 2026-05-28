@@ -4,10 +4,13 @@ class Sum{
     public static void main(String arg[])
     {
         Scanner sc=new Scanner(System.in);
-        System.out.println("Enter the number a & b: ");
-        int a=sc.nextInt();
-        int b=sc.nextInt();
-        int sum= a+b;
-        System.out.println("sum of a & b is "+sum); 
+        System.out.println("Enter the numbers u want to add");
+        int n=sc.nextInt();
+        int sum=0;
+        for (int i=1;i<=n;i++){
+            sum=sum+i;
+        }
+
+        System.out.println("Sum of the numbers is: "+sum);
     }
 }

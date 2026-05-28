@@ -17,24 +17,24 @@ class Area
 }
 
 
-import java.lang.*;
-import java.util.Scanner;
-class Scalene
-{
-	public static void main(String args[])
-	{
-		Scanner sc=new Scanner(System.in);
-		double a,b,c,area;
-		double s;
-		System.out.println(" enter sum= ");
-		a=sc.nextDouble();    // add cursor down ctrl+alt+ down/up
-		b=sc.nextDouble();
-		c=sc.nextDouble();
+// import java.lang.*;
+// import java.util.Scanner;
+// class Scalene
+// {
+// 	public static void main(String args[])
+// 	{
+// 		Scanner sc=new Scanner(System.in);
+// 		double a,b,c,area;
+// 		double s;
+// 		System.out.println(" enter sum= ");
+// 		a=sc.nextDouble();    // add cursor down ctrl+alt+ down/up
+// 		b=sc.nextDouble();
+// 		c=sc.nextDouble();
 	
-		s=(a+b+c)/2f;
-		area=Math.sqrt(s*(s-a)*(s-b)*(s-c));
-		System.out.println("s=" +s);
-		System.out.println("area="+area);
+// 		s=(a+b+c)/2f;
+// 		area=Math.sqrt(s*(s-a)*(s-b)*(s-c));
+// 		System.out.println("s=" +s);
+// 		System.out.println("area="+area);
 
-	}
-}
+// 	}
+// }

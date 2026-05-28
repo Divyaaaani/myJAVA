@@ -17,7 +17,7 @@ class Area
 }
 */
 
-import java.lang.*;
+// import java.lang.*;
 import java.util.Scanner;
 class Scalene
 {
