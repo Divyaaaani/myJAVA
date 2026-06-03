@@ -31,7 +31,7 @@ public class Methods
 
         System.out.println(a.charAt(9)); 
         for(int i =0;i <a.length();i++)
-        System.out.print(a.charAt(i)); //not new line
+        System.out.print(a.charAt(i)+ " "); //not new line
 
         System.out.println(a.indexOf("."));
         System.out.println(a.indexOf(".",9));  //i of . after i =9.

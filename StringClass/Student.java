@@ -11,7 +11,7 @@ class Student
        
         //or
         int i=email.indexOf("@");
-        String username=email.substring(0,i);
+        String username=email.substring(0,i);   
         String domain=email.substring(i,email.length());
         System.out.println("domain name = "+domain);
         System.out.println("username = "+username);
