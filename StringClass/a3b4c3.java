@@ -45,7 +45,7 @@ public class a3b4c3 {
             return sb.toString();
         }
 
-
+ 
     public static void main(String[] args){
         String str="aaabbbbccc";    
         System.out.println(StringCompress(str));
