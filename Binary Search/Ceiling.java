@@ -7,6 +7,9 @@ public class Ceiling {
 
         int ans=ceiling(arr,target);
         System.out.println(ans);
+
+        int ans2=floor(arr,target);
+        System.out.println(ans2);
     }
 
     static int ceiling(int[] arr, int target){
@@ -14,6 +17,11 @@ public class Ceiling {
         int end=arr.length-1;
 
         while(start<=end){
+
+            // if target elem is greatest of all elem in the array
+            if(target>arr[arr.length-1]){
+                return -1;
+            }
             int mid=start+(end-start)/2;
 
             if(target<arr[mid]){
@@ -26,6 +34,31 @@ public class Ceiling {
                 return mid;
             }
         }
-        return startcdd/;
+        return arr[start];
+    }
+
+    static int floor(int[] arr, int target){
+        int start=0;
+        int end=arr.length-1;
+
+        while(start<=end){
+
+            // if target elem is greatest of all elem in the array
+            if(target>arr[arr.length-1]){
+                return -1;
+            }
+            int mid=start+(end-start)/2;
+
+            if(target<arr[mid]){
+                end=mid-1;
+            }
+            else if(target>arr[mid]){
+                start=mid+1;
+            }
+            else{
+                return mid;
+            }
+        }
+        return arr[end];
     }
 }
