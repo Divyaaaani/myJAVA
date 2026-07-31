@@ -22,7 +22,7 @@ public class Ceiling {
             if(target>arr[arr.length-1]){
                 return -1;
             }
-            int mid=start+(end-start)/2;
+            int mid=start+(eand-start)/2;
 
             if(target<arr[mid]){
                 end=mid-1;
