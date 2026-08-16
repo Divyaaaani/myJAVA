@@ -97,7 +97,8 @@ int top;
 
 
     public static void main(String args[]){
-    Stack<Integer> s= new Stack<>();
+        Scanner sc= new Scanner(System.in);
+    StackArrr s=new StackArrr(5);
 
     s.push(10);
     s.push(20);
@@ -107,7 +108,14 @@ int top;
 
     System.out.println("Top elem is: "+ s.peek()); //50
     System.out.println("popped elem is: "+ s.pop()); //50
-     System.out.println("popped elem is: "+ s.pop()); //40
-     System.out.println("Top elem is: "+ s.peek()); //30
+    // System.out.println(s.toString());
+     System.out.println(" enter the elem to push : ");
+     int x=sc.nextInt(); 
+      s.push(x);
+    //  System.out.println(s.toString()); again cant use htis as it will pritng address
+    for (int i = s.top; i >= 0; i--) {
+        System.out.print(s.arr[i] + " ");
+    }
+    System.out.println();
     } 
 }
